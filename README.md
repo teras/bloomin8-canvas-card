@@ -111,8 +111,12 @@ cache-busting.
 
 The UI is localizable. English is the default; Greek (`el`) is bundled and selected
 automatically from `hass.language`. Force a language with the `language` option
-(e.g. `language: en`). Add more languages by extending the `TRANSLATIONS` object in
-`dist/bloomin8-canvas-card.js`.
+(e.g. `language: en`).
+
+**Translation PRs welcome!** Adding a language is a one-object change: copy the `en`
+block inside the `TRANSLATIONS` object in `dist/bloomin8-canvas-card.js`, translate
+the values, and open a pull request. New languages are picked up automatically from
+the user's `hass.language`.
 
 ## License
 
